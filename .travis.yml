@@ -50,7 +50,7 @@ script:
 
 deploy:
 provider: script
-script: mvn --show-version clean install
+script: mvn --show-version clean install test
 skip_cleanup: true
 on:
 branch: release
